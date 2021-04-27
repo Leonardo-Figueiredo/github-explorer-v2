@@ -2,10 +2,10 @@ const RepositoryItem = ({ repository }) => {
 
   return (
     <li>
-      <strong>{repository?.name ?? 'Repository'}</strong>
-      <p>{repository?.description}</p>
+      <strong>{repository.name}</strong>
+      <p>{repository.description}</p>
 
-      <a href={repository?.link} target="_blank">Access the repository</a>
+      <a href={repository.link} target="_blank">Access the repository</a>
     </li>
   )
 }
