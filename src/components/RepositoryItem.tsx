@@ -1,4 +1,10 @@
-const RepositoryItem = ({ repository }) => {
+import { Repository } from "../entities/Repository"
+
+interface RepositoryItemProps {
+  repository: Repository
+}
+
+const RepositoryItem: React.FC<RepositoryItemProps> = ({ repository }) => {
 
   return (
     <li>
